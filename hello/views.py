@@ -9,7 +9,7 @@ import requests
 def index(request):
     r = requests.get('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=SPXL&outputsize=full&apikey=8DI2YTBO8A4SZ5BR&datatype=csv')
     print(r.text)
-    return HttpResponse('<pre>' + r.text + "Wills website!" + '</pre>')
+    return HttpResponse('<pre>' "Wills website!" + r.text +  '</pre>')
 
 
 def db(request):
