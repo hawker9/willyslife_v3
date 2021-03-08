@@ -8,16 +8,18 @@ from .models import Choice, Question
 from django.template import loader
 from django.http import Http404
 from django.urls import reverse
-
+import requests
 
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")
 
+
+"""
 def detail(request, question_id):
     return HttpResponse("You're looking at question %s." % question_id)
 
 
-
+ 
 def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
     template = loader.get_template('polls/index.html')
@@ -53,4 +55,4 @@ def vote(request, question_id):
 
 def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
-    return render(request, 'polls/results.html', {'question': question})
+    return render(request, 'polls/results.html', {'question': question}) """
