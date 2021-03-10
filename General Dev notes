@@ -19,3 +19,7 @@ print("Table created successfully........")
 
 #Closing the connection
 conn.close()
+
+
+
+To watch the heroku server type in "- heroku logs --tail -a willyslife" 
