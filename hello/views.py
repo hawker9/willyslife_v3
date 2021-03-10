@@ -38,11 +38,12 @@ def databaseadd(request):
     cursor = conn.cursor()
 
     #Creating table as per requirement
-    sql2 = '''INSERT INTO Votes (name) VALUES ('TEST');'''
+    sql2 = '''INSERT INTO Votes (id, name) VALUES (45,'TEST');'''
 
     print(sql2)
     cursor.execute(sql2)
 
+    conn.commit()
     print("Table created successfully........")
 
     #Closing the connection
