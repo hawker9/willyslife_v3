@@ -23,3 +23,5 @@ if __name__ == '__main__':
 
 """python manage.py runserver"""
 """Ctrl + C to exit"""
+
+"""python Documents\GitHub\willyslife_v3\willyslife_v3-1\manage.py runserver"""

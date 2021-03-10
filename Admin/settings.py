@@ -54,7 +54,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "gettingstarted.urls"
+ROOT_URLCONF = "Admin.urls"
 
 TEMPLATES = [
     {
@@ -72,7 +72,7 @@ TEMPLATES = [
     }
 ]
 
-WSGI_APPLICATION = "gettingstarted.wsgi.application"
+WSGI_APPLICATION = "Admin.wsgi.application"
 
 
 # Database
@@ -84,6 +84,8 @@ DATABASES = {
         "NAME": os.path.join(BASE_DIR, "db.sqlite3")
     }
 }
+
+
 
 """ # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
@@ -141,3 +143,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = "/static/"
 
 django_heroku.settings(locals())
+
+## this is heroku spcific
+import dj_database_url
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
