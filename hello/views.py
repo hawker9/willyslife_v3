@@ -38,7 +38,7 @@ def databaseadd(request):
     cursor = conn.cursor()
 
     #Creating table as per requirement
-    sql2 = '''INSERT INTO "TEST" ("Name") VALUES (TEST1);'''
+    sql2 = '''INSERT INTO "TEST" ("Name") VALUES ('TEST1');'''
 
     
     cursor.execute(sql2)
