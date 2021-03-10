@@ -14,12 +14,17 @@ def index(request):
 
 
 def db(request):
+('<pre><b><p style=font-size:48px>&#128151Wills website!&#128151</b></p><br><br>Below is an API to the stock data for SPXL ticker:</pre>')
 
-    greeting = Greeting()
+
+
+
+
+"""greeting = Greeting()
     greeting.save()
 
     greetings = Greeting.objects.all()
 
-    return render(request, "db.html", {"greetings": greetings})
+    return render(request, "db.html", {"greetings": greetings})"""
 
 
