@@ -38,7 +38,7 @@ def databaseadd(request):
     cursor = conn.cursor()
 
     #Creating table as per requirement
-    sql2 = '''INSERT INTO "Stock Data for SPXL" ("id","Date","Open","High ","Low","Close","Volume") VALUES ('1','2020-01-01','69696969969.6969','69696969969.6969','69696969969.6969','69696969969.6969','69696969969.6969');'''
+    sql2 = '''INSERT INTO "Stock Data for SPXL" ("id","Date","Open","High ","Low","Close","Volume") VALUES ('1','2020-01-01','69','69','69','69','69');'''
 
     
     cursor.execute(sql2)
