@@ -31,7 +31,7 @@ def db(request):
 def databaseadd(request):
 
 
-    DATABASE_URL = os.environ['postgres://vzcibtawtpgqtc:e750ed1b5ae61bfe04c5f37fbd96ccc5753fef988755820a368a456ce5d8b9c7@ec2-54-198-252-9.compute-1.amazonaws.com:5432/d1cdv1k90n1vi3']
+    DATABASE_URL = os.environ['DATABASE_URL']
     conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
     #Creating a cursor object using the cursor() method
