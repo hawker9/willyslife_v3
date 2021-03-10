@@ -40,7 +40,7 @@ def databaseadd(request):
     #Creating table as per requirement
     sql2 = '''INSERT INTO Votes (name) VALUES ('TEST');'''
 
-
+    print(sql2)
     cursor.execute(sql2)
 
     print("Table created successfully........")
