@@ -22,4 +22,4 @@ conn.close()
 
 
 
-To watch the heroku server type in "- heroku logs --tail -a willyslife" 
+To watch the heroku server type in "heroku logs --tail -a willyslife" 
