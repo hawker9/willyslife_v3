@@ -44,7 +44,7 @@ def databaseadd(request):
     cursor.execute(sql2)
 
     conn.commit()
-    print("Table created successfully........")
+    print("Table created successfully.......")
 
     #Closing the connection
     conn.close()
