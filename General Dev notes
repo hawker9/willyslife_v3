@@ -23,3 +23,6 @@ conn.close()
 
 
 To watch the heroku server type in "heroku logs --tail -a willyslife" 
+
+
+databaseadd sexction of the python code is the one that integrates with the post grs SQL
