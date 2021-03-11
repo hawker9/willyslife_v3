@@ -20,7 +20,7 @@ def detail(request, question_id):
 
 def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
-    template = loader.get_template('gettingstarted/polls/templates/index.html')
+    template = loader.get_template('polls/TEMPLATES/index.html')
     context = {
         'latest_question_list': latest_question_list,
     }
