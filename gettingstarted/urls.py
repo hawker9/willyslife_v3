@@ -20,11 +20,5 @@ urlpatterns = [
     path("db/", hello.views.db, name="db"),
     path("admin/", admin.site.urls),
     path("databaseadd/", hello.views.databaseadd, name="databaseadd"),
-
-    path('', polls.views.index, name='index'),
-    path('<int:question_id>/', polls.views.detail, name='detail'),
-    path('<int:question_id>/results/', polls.views.results, name='results'),
-    path('<int:question_id>/vote/', polls.views.vote, name='vote'),
-    path('<int:question_id>/', polls.views.detail, name='detail'),
 ]
-  ]
+  
